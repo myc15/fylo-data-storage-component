@@ -3,29 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
+  <div class="container">
+    <div class="left">
+      <img class="fylo-logo" src="images/logo.svg" alt="logo">
   
-  0 GB
-  1000 GB
+      <div class="icons">
+        <div class="icon-container">
+          <img src="images/icon-document.svg" alt="icon-document">
+        </div>
+        <div class="icon-container">
+          <img src="images/icon-folder.svg" alt="icon-folder">
+        </div>
+        <div class="icon-container">
+          <img src="images/icon-upload.svg" alt="icon-upload">
+        </div>
+      </div>
+    </div>
+  
+    <div class="right">
+
+      <div class="gb-left bold triangle">
+        <p><span>185</span> GB Left</p>
+      </div>
+
+      <div class="gb-used">
+        <p>You’ve used <span class="bold">815 GB</span> of your storage</p>
+      </div>
+     
+      
+
+      <div class="range">
+        <div class="current-range">
+          <div class="circle">
+          </div>
+        </div>
+      </div>
+
+      <div class="gb bold">
+        <p>0 GB</p>
+        <p>1000 GB</p>
+      </div>
+
+
+    </div>
+  </div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/myc15/fylo-data-storage-component">Michelle Chow</a>.</p>
+  </div>  
 </body>
 </html>
